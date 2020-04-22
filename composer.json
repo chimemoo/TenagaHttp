@@ -1,0 +1,19 @@
+{
+    "name": "tenaga/http",
+    "description": "Fast & Simple HTTP Component",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chimemoo",
+            "email": "christ.16062@student.unsika.ac.id"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Tenaga\\Http\\": "src/"
+        }
+    }
+}
