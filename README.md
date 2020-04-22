@@ -1,5 +1,5 @@
 # TenagaHttp
-Http Foundation for Tenaga Framework Inspired by [PatrickLouys/http](https://github.com/PatrickLouys/http)  
+(Still Development) Http Foundation for Tenaga Framework Inspired by [PatrickLouys/http](https://github.com/PatrickLouys/http)  
 
 # How to install?
 > composer require Tenaga\Http
@@ -19,10 +19,20 @@ $request->all($key, $default = null);
 
 # Get value from $_POST superglobals variables
 $request->post($key, $default = null);
+
+# Get value from $_GET superglobals variables
 $request->get($key, $default = null);
+
+# Get value from $_FILES superglobals variables
 $request->file($key, $default = null);
+
+# Get value from $_COOKIE[$key] superglobals variables
 $request->cookie($key, $default = null);
+
+# Get all parameters key & value on $_GET and $_POST
 $request->parameters();
+
+
 $request->uri();
 $request->path();
 $request->method();

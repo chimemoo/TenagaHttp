@@ -31,7 +31,7 @@ class Header implements HeaderFunction
 
   /**
    * Status Text List
-   * @var [type]
+   * @var Array
    */
   private $statusTexts = [
       100 => 'Continue',

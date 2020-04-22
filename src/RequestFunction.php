@@ -3,9 +3,9 @@
 interface RequestFunction {
 
     public function all($key, $default = null);
-    public function post($key, $default = null);
-    public function get($key, $default = null);
-    public function file($key, $default = null);
+    public function post($key = null, $default = null);
+    public function get($key = null, $default = null);
+    public function file($key = null, $default = null);
     public function cookie($key, $default = null);
     public function parameters();
     public function uri();

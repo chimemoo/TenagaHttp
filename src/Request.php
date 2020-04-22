@@ -3,7 +3,7 @@
 /**
  * Request Class
  */
-class Request implements RequestsFunction {
+class Request implements RequestFunction {
 
   /**
    * Register $_REQUEST
@@ -58,7 +58,7 @@ class Request implements RequestsFunction {
    * Get request with key from $_REQUEST
    * @param  String $key     Name of request
    * @param  Bool $default   Default value
-   * @return Object          Object of request
+   * @return Array          Object of request
    */
   public function all($key, $default = null)
   {
@@ -72,42 +72,57 @@ class Request implements RequestsFunction {
    * Get request from $_GET
    * @param  String $key     Name of get
    * @param  Bool $default   Default value
-   * @return Object          Object of request
+   * @return Array          Object of request
    */
-  public function get($key, $default = null)
+  public function get($key = null, $default = null)
   {
-    if(array_key_exists($key, $this->get)){
-        return $this->get[$key];
+    if($key == null){
+      return $this->get;
     }
-    return $default;
+    else {
+      if(array_key_exists($key, $this->get)){
+        return $this->get[$key];
+      }
+      return $default;
+    }
   }
 
   /**
    * Get request from $_POST
    * @param  String $key     Name of post
    * @param  Bool $default   Default value
-   * @return Object          Object of request
+   * @return Array          Object of request
    */
-  public function post($key, $default = null)
+  public function post($key = null, $default = null)
   {
-    if(array_key_exists($key, $this->post)){
-        return $this->post[$key];
+    if($key == null){
+      return $this->post;
     }
-    return $default;
+    else {
+      if(array_key_exists($key, $this->post)){
+        return $this->post[$key];
+      }
+      return $default;
+    }
   }
 
   /**
    * Get request from $_FILE
    * @param  String $key     Name of file
    * @param  Bool $default   Default value
-   * @return Object          Object of request
+   * @return Array          Object of request
    */
-  public function file($key, $default = null)
+  public function file($key = null, $default = null)
   {
-    if(array_key_exists($key, $this->file)){
-        return $this->file[$key];
+    if($key == null){
+      return $this->file;
     }
-    return $default;
+    else {
+      if(array_key_exists($key, $this->file)){
+        return $this->file[$key];
+      }
+      return $default;
+    }
   }
 
   /**
@@ -204,7 +219,7 @@ class Request implements RequestsFunction {
     return false;
   }
 
-  
+
   public function getServerVar($key)
   {
     if(!array_key_exists($key, $this->server)){
