@@ -1,5 +1,5 @@
 # TenagaHttp
-(Still Development) Http Foundation for Tenaga Framework Inspired by [PatrickLouys/http](https://github.com/PatrickLouys/http)  
+Http Foundation for [Tenaga Framework](https://github.com/chimemoo/tenaga) Inspired by [PatrickLouys/http](https://github.com/PatrickLouys/http)  
 
 # How to install?
 > composer require Tenaga\Http
@@ -145,4 +145,4 @@ $cookie->prepare
        ->setHttpOnly(true)
        ->create();
 ```
-kamu dapat memanggil beberapa atau semuanya, tetapi harus menggunakan fungsi create() di akhir
+You can call some or all of them, but you must use the create () function at the end
