@@ -7,8 +7,8 @@ use Tenaga\Http\Cookie;
 
 $a = new A;
 $a->set();
-var_dump($a->get('id'));
+var_dump($a->httpAccept());
 
-$b = new Cookie;
-var_dump($b->prepare->setName('aa')->setValue('aaa')->create()); 
-var_dump($_COOKIE);
+// $b = new Cookie;
+// $b->prepare->setName('aa')->setValue('bbc')->create();
+// var_dump($_COOKIE);
