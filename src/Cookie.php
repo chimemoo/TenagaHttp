@@ -1,6 +1,6 @@
 <?php namespace Tenaga\Http;
 
-class Cookie implements CookieFunction {
+class Cookie implements CookieInterface {
 
     /**
      * Register Cookie Parameters

@@ -3,7 +3,7 @@
 /**
  *
  */
-interface ResponseFunction
+interface ResponseInterface
 {
   public function setResponse($response);
   public function getResponse();

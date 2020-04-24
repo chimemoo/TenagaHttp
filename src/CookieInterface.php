@@ -1,6 +1,6 @@
 <?php namespace Tenaga\Http;
 
-interface CookieFunction {
+interface CookieInterface {
 
   public function setName(string $name);
   public function setValue($value);

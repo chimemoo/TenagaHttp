@@ -3,7 +3,7 @@
 /**
  * Response Class
  */
-class Response {
+class Response implements RequestInterface {
 
 /**
  * Response Variable

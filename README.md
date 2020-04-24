@@ -145,4 +145,4 @@ $cookie->prepare
        ->setHttpOnly(true)
        ->create();
 ```
-You can call some or all of them, but you must use the create () function at the end
+You can call some or all of them, but you must use prepare for preparing cookie and at the end create() function for making the cookie

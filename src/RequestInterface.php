@@ -1,6 +1,6 @@
 <?php namespace Tenaga\Http;
 
-interface RequestFunction {
+interface RequestInterface {
 
     public function all($key, $default = null);
     public function post($key = null, $default = null);

@@ -3,7 +3,7 @@
 /**
  * Header Interface Function
  */
-interface HeaderFunction
+interface HeaderInterface
 {
   public function setStatusCode($statusCode , $statusText = null);
   public function setContentType($type, $charset = NULL);

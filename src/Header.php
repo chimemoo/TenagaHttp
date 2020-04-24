@@ -3,7 +3,7 @@
 /**
  * Header Class
  */
-class Header implements HeaderFunction
+class Header implements HeaderInterface
 {
   /**
    * HTTP Version
