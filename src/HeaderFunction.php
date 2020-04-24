@@ -7,7 +7,7 @@ interface HeaderFunction
 {
   public function setStatusCode($statusCode , $statusText = null);
   public function setContentType($type, $charset = NULL);
-  public function setExpired($date);
+  public function setExpires($date);
   public function setHeader($name,$value);
   public function getAllHeader();
 }
