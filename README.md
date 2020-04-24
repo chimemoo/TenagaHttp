@@ -2,7 +2,7 @@
 Http Foundation for [Tenaga Framework](https://github.com/chimemoo/tenaga) Inspired by [PatrickLouys/http](https://github.com/PatrickLouys/http)  
 
 # How to install?
-> composer require tenaga\Http dev-master
+> composer require tenaga\Http
 
 # Usage?
 ## Request
