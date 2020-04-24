@@ -3,7 +3,7 @@
 /**
  * Request Class
  */
-class Request implements RequestFunction {
+class Request implements RequestInterface {
 
   /**
    * Register $_REQUEST
@@ -51,11 +51,11 @@ class Request implements RequestFunction {
     $this->server = $_SERVER;
     $this->file = $_FILES;
     $this->cookie = $_COOKIE;
-    $this->request = $_REQUEST;
+    $this->request = array_merge($_GET,$_POST);
   }
 
   /**
-   * Get request with key from $_REQUEST
+   * Get request with key from merge of $_GET & $_POST
    * @param  String $key     Name of request
    * @param  Bool $default   Default value
    * @return Array          Object of request
