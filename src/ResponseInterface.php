@@ -1,11 +1,11 @@
-<?php namespace Http\Tenaga;
+<?php namespace Tenaga\Http;
 
 /**
  *
  */
 interface ResponseInterface
 {
-  public function setResponse($response);
+  public function setResponse(String $response);
   public function getResponse();
-  public function appendResponse($response);
+  public function appendResponse(String $response);
 }

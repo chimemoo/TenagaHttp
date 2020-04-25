@@ -3,12 +3,12 @@
 /**
  * Response Class
  */
-class Response implements RequestInterface {
+class Response implements ResponseInterface {
 
-/**
- * Response Variable
- * @var String
- */
+  /**
+   * Response Variable
+   * @var String
+   */
   private $response;
 
   /**
