@@ -40,6 +40,14 @@ class Cookie implements CookieInterface {
         ];
     }
 
+    public function prepare(array $cookie){
+      $no = 0;
+      foreach ($cookie as $value) {
+        $this->cookie[$no] = $value;
+        $no++;
+      }
+      return $this->prepare;
+    }
     /**
      * Set Cookie name
      * @param String $name  Name of cookie

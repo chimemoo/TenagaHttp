@@ -109,6 +109,9 @@ $cookie = new Cookie;
 ```
 Then you can some function below
 ```PHP
+# Set cookie by just passing the cookie by an array
+prepare(array $cookie);
+
 # Set cookie name
 setName(string $name);
 
@@ -146,3 +149,25 @@ $cookie->prepare
        ->create();
 ```
 You can call some or all of them, but you must use prepare for preparing cookie and at the end create() function for making the cookie
+
+Or you can use prepare() function to create new cookie.
+```PHP
+/**
+ * List Of key of array
+ * 0 => name
+ * 1 => value
+ * 2 => expire
+ * 3 => path
+ * 4 => domain (optional)
+ * 5 => secure (optional)
+ * 6 => httponly (optional)
+*/
+$cookieData = [
+  'ExampleCookie',
+  'Example',
+  3600,
+  '/',
+  'localhost.com'
+];
+$cookie->prepare($cookieData)->create();
+```
